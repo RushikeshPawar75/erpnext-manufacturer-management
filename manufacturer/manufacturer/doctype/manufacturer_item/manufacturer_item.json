@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:part_number",
+ "creation": "2025-12-16 22:24:14.964348",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "manufacturer",
+  "item_code",
+  "part_number",
+  "gtin"
+ ],
+ "fields": [
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Manufacturer",
+   "options": "Manufacturers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "part_number",
+   "fieldtype": "Data",
+   "label": "Part Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "gtin",
+   "fieldtype": "Data",
+   "label": "GTIN"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-16 22:24:27.737396",
+ "modified_by": "Administrator",
+ "module": "Manufacturer",
+ "name": "Manufacturer Item",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
